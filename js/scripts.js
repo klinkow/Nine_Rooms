@@ -3,7 +3,14 @@ var unlocked = false;
 var board = false;
 
 function checkForKey() {
-  if (key === true);
+  if (key === true) {
+    $("#useKey").show();
+  }
+  // return true;
+};
+
+function checkIfLocked() {
+  if (unlocked === false);
   $("#useKey").show();
   // return true;
 };
@@ -35,7 +42,7 @@ $(document).ready(function()  {
   });
 
   $("#useKey").click(function(event) {
-    $("keyUsed").show();
+    $("#keyUsed").show();
     // event.preventDefault();
   });
 
